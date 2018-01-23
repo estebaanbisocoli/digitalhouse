@@ -19,7 +19,7 @@ h1 {
     background-color: transparent;
     font-size: 120%;
     height: 100%;
-    margin-left: -14px !important;
+    margin-left: 0px !important;
     
     border-color: transparent
 
@@ -45,12 +45,14 @@ legend {
     border-bottom: none !important;
 }
 .col1 {
-    width: 35%;
-    margin-left: 40px !important;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .center {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
 }
 label {
     margin-top: 5px;
@@ -58,7 +60,16 @@ label {
     font-size: 20px
 }
 .col2 {
-    width: 40% !important;
+    width: 50% !important;
     margin-bottom: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+.btn {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0 !important;
+    background-color: darkblue !important;
 }
