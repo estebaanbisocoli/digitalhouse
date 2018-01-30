@@ -1,6 +1,19 @@
-
 window.onload = function() {
 
+    axios.get('https://mivue-8c313.firebaseapp.com/provincias').then(response => {
+        response.data.provincias.forEach(prov => {
+            agregarOption(prov)
+        })
+
+    }).catch(err => {
+        alert('Ha ocurrido un error tratando de obtener la lista de provincias')
+    })
+}
+function agregarOption(value) {
+    var option = document.createElement('option')
+    var text = document.createTextNode(value)
+    option.appendChild(text)
+    document.getElementById('provincias').appendChild(option)
 }
 function devolverImporte () {
     var importe = document.getElementById('importe').value
