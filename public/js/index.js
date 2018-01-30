@@ -2,17 +2,17 @@
 window.onload = function() {
 
 }
-function returnValue () {
+function devolverImporte () {
     var importe = document.getElementById('importe').value
     console.log(importe)
 }
 
 function calcularCouta(total, interes) {
-    return(total * ((interes/100) +1) / 12)
+    return Number(total * ((interes/100) +1) / 12).toFixed(2)
 }
 
 function totalConInteres (total, interes) {
-    return parseFloat(Math.round(total * ((interes/100) + 1)).toFixed(2))
+    return Number((total * ((interes/100) + 1))).toFixed(2)
 }
 
 function calcularTodo() {

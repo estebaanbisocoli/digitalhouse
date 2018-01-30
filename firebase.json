@@ -1,5 +1,9 @@
 {
-	"hosting": {
-		"public": "./public/segunda version"
-	}
+  "hosting": {
+    "public": "./public",
+    "rewrites": [{
+      "source": "/provincias",
+      "function": "app"
+    }]
+  }
 }
